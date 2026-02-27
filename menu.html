@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhamPha</title>
+    <link rel="stylesheet" href="khamPha.css">
+</head>
+<body>
+    <div class="top-bar">
+    <div id="BangDoKho">
+        <button onclick="doKhoLa('De')">Dễ</button>
+        <button onclick="doKhoLa('TrungBinh')">Trung bình</button>
+        <button onclick="doKhoLa('Kho')">Khó</button>
+    </div>
+    <button onclick="quayLai()">Quay lại</button>
+</div>
+<div id="cuaSo" class="cuaSo">
+    <h3 id="tieude"></h3>
+    <p id="mota"></p>
+    <button onclick="dong()">Đóng</button>
+</div>
+<div class="main">
+
+    <!-- Đồng bằng -->
+    <div class="region">
+        <div class="difficulty-label">Dễ</div>
+        <div class="region-name">Vùng đồng bằng</div>
+        <div class="region-box green"></div>
+        <div class="progress">0%</div>
+    </div>
+
+    <!-- Sông cạn -->
+    <div class="region">
+        <div class="difficulty-label">Trung bình</div>
+        <div class="region-name">Sông cạn</div>
+        <div class="region-box brown"></div>
+        <div class="progress">0%</div>
+    </div>
+
+    <!-- Đá lở -->
+    <div class="region">
+        <div class="difficulty-label">Khó</div>
+        <div class="region-name">Vùng đá lở</div>
+        <div class="region-box gray"></div>
+        <div class="progress">0%</div>
+    </div>
+
+</div>
+
+<div class="footer-text">
+    HÃY LỰA CHỌN KHU VỰC KHÁM PHÁ!
+</div>
+<script src="Kpha.js"></script>
+</body>
+</html>
