@@ -9,10 +9,11 @@ function LuuTen(){
     localStorage.setItem("tenPlayer", Ten);//lưu tên vào bộ nhớ trình duyệt
 }
 window.onload = function(){// Khi tải trang → kiểm tra có tên chưa
-    let LuuTen = localStorage.setItem("tenPlayer");
+    let LuuTen = localStorage.getItem("tenPlayer");
     if(LuuTen){
         document.getElementById("tenPlayer").innerText = LuuTen;
         document.getElementById("CuaSoTen").style.display = "none";
     }
 
 }
+
