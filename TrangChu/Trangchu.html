@@ -2,6 +2,8 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trang Chủ Game</title>
 <link rel="stylesheet" href="Tchu.css">
 </head>
@@ -23,8 +25,7 @@
     <button class="menu-btn shop">Shop</button>
 </div>
 
-<div class="character-area">
-    Khu vực đặt nhân vật
+<div class="character-area" id="characterArea">
 </div>
 <div class="CuaSoDatTen" id="CuaSoTen">
     <div class="HopCuaso">
@@ -32,6 +33,21 @@
     <input type="text" id="DatTen" placeholder="Nhập tên...">
     <button id="XacNhan" onclick="LuuTen()">Xác nhận</button>
     </div>
+</div>
+<div class="CuaSoChonThu" id="CuaSoThu" style="display: none;">
+<div class="HopCuaso">
+     <h2 class="TileTuychinh">Hãy tùy chỉnh thú của bạn!</h2>
+     <div class="AnhThu"> <img src="Thu.png"></div>
+     <br><br>
+     <input type="text" id="TenThu" placeholder="Tên thú">
+     <br><br>
+     <select id="GioiTinh">
+        <option value="Đực">Đực</option>
+        <option value="Cái">Cái</option>
+     </select>
+     <br><br>
+     <button onclick="XacNhanThu()">Xác nhận</button>
+</div>
 </div>
 <script src="TrChu.js"></script>
 </body>
